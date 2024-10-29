@@ -11,8 +11,25 @@ public class Main {
 
     // פעולה למציאת n המספרים הנרקיסיסטיים הראשונים
     public static int[] findNarcissisticNumbers(int n) {
-        // TODO: השלם את הלוגיקה למציאת המספרים הנרקיסיסטיים
-        return new int[0]; // החזרה זמנית
+        int check = 153;
+
+       if(check%10*3 + check/10%10*3 + check/100%10*3 == check)
+            return new int[n];
+        return new int[0];
+
     }
 
-}
+    }
+
+       /*int num=1;
+        int count=0;
+        int[]nums = new int [n];
+        while ( count!=n) {
+
+            if (num%10 + num/10%10 +num/100%10 + num/1000%10 +num/1000%10 + num/10000%10 ==num){
+                nums[count] =num;
+                count++;
+            }
+          num++;
+        }
+        return  nums;*/
